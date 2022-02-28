@@ -1,0 +1,100 @@
+$color-black: #151a30;
+.login {
+  padding-top: 96px;
+  position: relative;
+  margin: auto;
+  width: 375px;
+
+  &__logo {
+    position: relative;
+    width: 113.1px;
+    height: 160px;
+    margin: auto;
+
+    .lower-img {
+      position: absolute;
+    }
+
+    .upper-img {
+      z-index: 999;
+      position: absolute;
+      width: 75.92px;
+      height: 108.45px;
+      margin: 18.59px;
+    }
+  }
+
+  &__title {
+    color: $color-black;
+    margin-top: 24px;
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 40px;
+      margin-bottom: 8px;
+      margin: auto;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 400;
+      margin: 8px auto;
+    }
+  }
+
+  &__control {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    label {
+      padding-bottom: 4px;
+      font-size: 10px;
+      line-height: 16px;
+      font-weight: 700;
+      color: #57627b;
+      padding-left: 8px;
+      text-transform: uppercase;
+    }
+
+    .password-wrapper {
+      width: 100%;
+      position: relative;
+      input {
+        width: 100%;
+        height: 40px;
+        border-radius: 8px;
+        border: 1px solid #c5cee0;
+        line-height: 16px;
+        padding: 10px 16px;
+      }
+      i {
+        position: absolute;
+        right: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      i:hover {
+        color: #1273ea;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__actions {
+    text-align: center;
+    button {
+      border-radius: 8px;
+      background-image: linear-gradient(256.28deg, #1c94f4 0%, #1273ea 100%);
+      padding: 10px 20px;
+      color: white;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 20px;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
