@@ -1,0 +1,24 @@
+.currency {
+  &--EUR {
+    @include currency-icon("/src/assets/images/image 7.png");
+  }
+
+  &--YEN {
+    @include currency-icon("/src/assets/images/image 8.png");
+  }
+  &--USD {
+    @include currency-icon("/src/assets/images/image 9.png");
+  }
+}
+
+input[class*="amount"] + span {
+  position: relative;
+  &::after {
+    position: absolute;
+    content: url("/src//assets/images/Frame 789.png");
+    top: 60%;
+    left: 50%;
+    transform: translate(-120%, -50%);
+    cursor: pointer;
+  }
+}

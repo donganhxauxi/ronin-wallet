@@ -1,0 +1,40 @@
+.blue-card {
+  background: linear-gradient(256.28deg, #1c94f4 0%, #1273ea 100%);
+  box-shadow: 0px 12px 20px -4px #c5cee0;
+  border-radius: 16px;
+  color: $color-white;
+  margin-top: 20px;
+  padding: 20px;
+
+  &__header {
+    @include flex(space-between, center);
+
+    p {
+      margin-bottom: 0;
+      @include text(14px, 600, 20px, $color-white);
+      span {
+        @include text(14px, 400, 20px, #8dc9f9);
+      }
+    }
+
+    img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &__body {
+    p {
+      text-align: left;
+      @include text(32px, 700, 40px, $color-white);
+
+      &:last-child {
+        @include text(16px, 600, 24px, #8dc9f9);
+        margin-top: 4px;
+      }
+    }
+    .flex {
+      @include flex(flex-end, flex-end);
+    }
+  }
+}

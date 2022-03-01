@@ -1,62 +1,217 @@
-/* line 2, public/sass/page/_login.scss */
+/* line 1, public/sass/base/_base.scss */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "sf-pro-text"; }
+
+/* line 8, public/sass/base/_base.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  text-align: center;
+  margin-bottom: 0; }
+
+@font-face {
+  font-family: "sf-pro-text";
+  src: local("sf-pro-text"), url(/public/assets/fonts/FontsFree-Net-SFProText-Regular.ttf) format("truetype"); }
+
+/* line 1, public/sass/layout/_action.scss */
+.actions {
+  margin: 28px 92px 0 92px;
+  justify-content: space-between;
+  align-items: baseline; }
+  /* line 5, public/sass/layout/_action.scss */
+  .actions__logo {
+    opacity: 0.5;
+    border-radius: 8px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    /* line 13, public/sass/layout/_action.scss */
+    .actions__logo img {
+      background: #f7f9fc;
+      padding: 12px 12px 12px 12px; }
+    /* line 18, public/sass/layout/_action.scss */
+    .actions__logo:nth-child(2) {
+      opacity: 1;
+      cursor: pointer; }
+    /* line 23, public/sass/layout/_action.scss */
+    .actions__logo p {
+      color: #151a30;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 20px; }
+
+/* line 1, public/sass/layout/_bluecard.scss */
+.blue-card {
+  background: linear-gradient(256.28deg, #1c94f4 0%, #1273ea 100%);
+  box-shadow: 0px 12px 20px -4px #c5cee0;
+  border-radius: 16px;
+  color: #fff;
+  margin-top: 20px;
+  padding: 20px; }
+  /* line 9, public/sass/layout/_bluecard.scss */
+  .blue-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    /* line 12, public/sass/layout/_bluecard.scss */
+    .blue-card__header p {
+      margin-bottom: 0;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 20px; }
+      /* line 15, public/sass/layout/_bluecard.scss */
+      .blue-card__header p span {
+        color: #8dc9f9;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px; }
+    /* line 20, public/sass/layout/_bluecard.scss */
+    .blue-card__header img {
+      width: 16px;
+      height: 16px; }
+  /* line 27, public/sass/layout/_bluecard.scss */
+  .blue-card__body p {
+    text-align: left;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px; }
+    /* line 31, public/sass/layout/_bluecard.scss */
+    .blue-card__body p:last-child {
+      color: #8dc9f9;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 24px;
+      margin-top: 4px; }
+  /* line 36, public/sass/layout/_bluecard.scss */
+  .blue-card__body .flex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end; }
+
+/* line 1, public/sass/layout/_assets.scss */
+.assets {
+  margin-top: 18px;
+  padding: 0 20px; }
+  /* line 4, public/sass/layout/_assets.scss */
+  .assets h1 {
+    color: #151a30;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left; }
+  /* line 8, public/sass/layout/_assets.scss */
+  .assets__currency {
+    margin-top: 12px;
+    padding: 20px 16px;
+    background-color: #f7f9fc; }
+    /* line 13, public/sass/layout/_assets.scss */
+    .assets__currency p {
+      text-align: left;
+      color: #8f9bb3;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16px; }
+      /* line 16, public/sass/layout/_assets.scss */
+      .assets__currency p:first-child {
+        color: #151a30;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px; }
+    /* line 21, public/sass/layout/_assets.scss */
+    .assets__currency--sending {
+      background-color: #fff;
+      margin-top: 12px;
+      padding: 20px 16px;
+      cursor: pointer; }
+      /* line 27, public/sass/layout/_assets.scss */
+      .assets__currency--sending p {
+        text-align: left;
+        color: #8f9bb3;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px; }
+        /* line 30, public/sass/layout/_assets.scss */
+        .assets__currency--sending p:first-child {
+          color: #151a30;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 20px; }
+      /* line 35, public/sass/layout/_assets.scss */
+      .assets__currency--sending:hover {
+        background-color: #edf1f7; }
+
+/* line 1, public/sass/page/_login.scss */
 .login {
   padding-top: 96px;
   position: relative;
-  margin: auto;
-  width: 375px; }
-  /* line 8, public/sass/page/_login.scss */
+  width: 375px;
+  margin: 0 auto; }
+  /* line 7, public/sass/page/_login.scss */
   .login__logo {
     position: relative;
     width: 113.1px;
     height: 160px;
     margin: auto; }
-    /* line 14, public/sass/page/_login.scss */
+    /* line 13, public/sass/page/_login.scss */
     .login__logo .lower-img {
       position: absolute; }
-    /* line 18, public/sass/page/_login.scss */
+    /* line 17, public/sass/page/_login.scss */
     .login__logo .upper-img {
       z-index: 999;
       position: absolute;
       width: 75.92px;
       height: 108.45px;
       margin: 18.59px; }
-  /* line 27, public/sass/page/_login.scss */
+  /* line 26, public/sass/page/_login.scss */
   .login__title {
     color: #151a30;
     margin-top: 24px; }
-    /* line 30, public/sass/page/_login.scss */
+    /* line 29, public/sass/page/_login.scss */
     .login__title h1 {
+      color: #151a30;
       font-size: 32px;
       font-weight: 700;
       line-height: 40px;
-      margin-bottom: 8px;
-      margin: auto; }
-    /* line 38, public/sass/page/_login.scss */
+      margin: 0 auto 8px auto; }
+    /* line 34, public/sass/page/_login.scss */
     .login__title p {
+      color: #151a30;
       font-size: 14px;
-      line-height: 20px;
       font-weight: 400;
+      line-height: 20px;
       margin: 8px auto; }
-  /* line 46, public/sass/page/_login.scss */
+  /* line 40, public/sass/page/_login.scss */
   .login__control {
     margin-top: 24px;
     display: flex;
-    flex-direction: column;
-    padding: 20px; }
-    /* line 52, public/sass/page/_login.scss */
+    flex-direction: column; }
+    /* line 45, public/sass/page/_login.scss */
     .login__control label {
       padding-bottom: 4px;
-      font-size: 10px;
-      line-height: 16px;
-      font-weight: 700;
       color: #57627b;
+      font-size: 10px;
+      font-weight: 700;
+      line-height: 16px;
       padding-left: 8px;
       text-transform: uppercase; }
-    /* line 62, public/sass/page/_login.scss */
+    /* line 52, public/sass/page/_login.scss */
     .login__control .password-wrapper {
       width: 100%;
-      position: relative; }
-      /* line 65, public/sass/page/_login.scss */
+      position: relative;
+      margin-bottom: 24px; }
+      /* line 56, public/sass/page/_login.scss */
       .login__control .password-wrapper input {
         width: 100%;
         height: 40px;
@@ -64,20 +219,21 @@
         border: 1px solid #c5cee0;
         line-height: 16px;
         padding: 10px 16px; }
-      /* line 73, public/sass/page/_login.scss */
+      /* line 64, public/sass/page/_login.scss */
       .login__control .password-wrapper i {
         position: absolute;
         right: 5%;
         top: 50%;
         transform: translateY(-50%); }
-      /* line 79, public/sass/page/_login.scss */
+      /* line 70, public/sass/page/_login.scss */
       .login__control .password-wrapper i:hover {
         color: #1273ea;
         cursor: pointer; }
-  /* line 86, public/sass/page/_login.scss */
+  /* line 77, public/sass/page/_login.scss */
   .login__actions {
-    text-align: center; }
-    /* line 88, public/sass/page/_login.scss */
+    text-align: center;
+    margin-top: 24px; }
+    /* line 80, public/sass/page/_login.scss */
     .login__actions button {
       border-radius: 8px;
       background-image: linear-gradient(256.28deg, #1c94f4 0%, #1273ea 100%);
@@ -89,23 +245,84 @@
       border: none;
       cursor: pointer; }
 
-/* line 1, public/sass/base/_base.scss */
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "sf-pro-text"; }
+/* line 1, public/sass/page/_profile.scss */
+.profile {
+  padding: 20px 0;
+  width: 375px;
+  margin: 0 auto; }
+  /* line 6, public/sass/page/_profile.scss */
+  .profile__description {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f7f9fc;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding: 12px; }
+    /* line 14, public/sass/page/_profile.scss */
+    .profile__description i {
+      font-size: 8px;
+      color: #1273ea; }
+    /* line 18, public/sass/page/_profile.scss */
+    .profile__description p {
+      color: #151a30;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 20px; }
 
-/* line 13, public/sass/base/_base.scss */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+/* line 1, public/sass/page/_transaction.scss */
+.transaction {
+  width: 375px;
+  margin: 0 auto;
   text-align: center; }
+  /* line 6, public/sass/page/_transaction.scss */
+  .transaction__header {
+    width: 100%;
+    position: relative;
+    box-shadow: 0px 4px 12px #f7f9fc;
+    padding: 23px 32.5px; }
+    /* line 11, public/sass/page/_transaction.scss */
+    .transaction__header img {
+      position: absolute;
+      top: 50%;
+      left: 24px;
+      transform: translateY(-50%); }
+    /* line 18, public/sass/page/_transaction.scss */
+    .transaction__header p {
+      color: #151a30;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 20px; }
 
-@font-face {
-  font-family: "sf-pro-text";
-  src: local("sf-pro-text"), url(/public/assets/fonts/FontsFree-Net-SFProText-Regular.ttf) format("truetype"); }
+/* line 2, public/sass/utility/_utility.scss */
+.currency--EUR {
+  background-image: url("/src/assets/images/image 7.png");
+  background-repeat: no-repeat;
+  background-position: 3%;
+  text-indent: 30px; }
+
+/* line 6, public/sass/utility/_utility.scss */
+.currency--YEN {
+  background-image: url("/src/assets/images/image 8.png");
+  background-repeat: no-repeat;
+  background-position: 3%;
+  text-indent: 30px; }
+
+/* line 9, public/sass/utility/_utility.scss */
+.currency--USD {
+  background-image: url("/src/assets/images/image 9.png");
+  background-repeat: no-repeat;
+  background-position: 3%;
+  text-indent: 30px; }
+
+/* line 14, public/sass/utility/_utility.scss */
+input[class*="amount"] + span {
+  position: relative; }
+  /* line 16, public/sass/utility/_utility.scss */
+  input[class*="amount"] + span::after {
+    position: absolute;
+    content: url("/src//assets/images/Frame 789.png");
+    top: 60%;
+    left: 50%;
+    transform: translate(-120%, -50%);
+    cursor: pointer; }

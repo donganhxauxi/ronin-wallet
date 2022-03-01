@@ -1,0 +1,22 @@
+.transaction {
+  width: 375px;
+  margin: 0 auto;
+  text-align: center;
+
+  &__header {
+    width: 100%;
+    position: relative;
+    box-shadow: 0px 4px 12px #f7f9fc;
+    padding: 23px 32.5px;
+    img {
+      position: absolute;
+      top: 50%;
+      left: 24px;
+      transform: translateY(-50%);
+    }
+
+    p {
+      @include text(14px, 600, 20px);
+    }
+  }
+}

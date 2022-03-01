@@ -1,0 +1,40 @@
+.assets {
+  margin-top: 18px;
+  padding: 0 20px;
+  h1 {
+    @include text(16px, 700, 20px);
+    text-align: left;
+  }
+  &__currency {
+    margin-top: 12px;
+    padding: 20px 16px;
+    background-color: #f7f9fc;
+
+    p {
+      text-align: left;
+      @include text(12px, 400, 16px, #8f9bb3);
+      &:first-child {
+        @include text(14px, 600, 20px);
+      }
+    }
+
+    &--sending {
+      background-color: #fff;
+      margin-top: 12px;
+      padding: 20px 16px;
+      cursor: pointer;
+
+      p {
+        text-align: left;
+        @include text(12px, 400, 16px, #8f9bb3);
+        &:first-child {
+          @include text(14px, 600, 20px);
+        }
+      }
+
+      &:hover {
+        background-color: #edf1f7;
+      }
+    }
+  }
+}
